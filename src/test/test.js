@@ -1,4 +1,4 @@
-import aritGeo from '../test';
+import aritGeo from '../app';
 import { assert } from 'chai';
 
 describe("Arith-Geo", function(){
@@ -25,7 +25,7 @@ describe("Arith-Geo", function(){
             assert.equal(aritGeo([2,3,5,8,10]), -1);
         });
     })
-    
+
     describe("Arithmetic Progression", function(){
         it("should return arithmetic as aritGeo for [1,2,3,4,5]", function(){
             assert.equal(aritGeo([1,2,3,4]), "Arithmetic");
