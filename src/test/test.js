@@ -44,5 +44,11 @@ describe("Arith-Geo", function(){
         });
     })
 
+    describe("handle invalid input", function(){
+        it("should return Array length not sufficient as aritGeo for [2,4]", function(){
+            assert.equal(aritGeo([2,4]), "Array length not sufficient");
+        });
+    })
+
 
 })
