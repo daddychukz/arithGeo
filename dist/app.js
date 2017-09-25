@@ -5,16 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var aritGeo = function aritGeo(chkArray) {
-    var arith = 0; //variable declaration initialized with 0
-    var geo = 0; //variable declaration initialized with 0
+    var arith = 0;
+    var geo = 0;
     for (var i = 0; i < chkArray.length - 2; i++) {
-        //loops through the array
         if (chkArray[i + 1] - chkArray[i] === chkArray[i + 2] - chkArray[i + 1]) {
             //compares difference between two element if equal
-            arith++; //increment count of arith variable
+            arith++;
         } else if (chkArray[i + 1] / chkArray[i] === chkArray[i + 2] / chkArray[i + 1]) {
             //compares ratio between two elements of array if equal
-            geo++; //increment count of geo variable
+            geo++;
         }
     }
 
@@ -43,5 +42,5 @@ var aritGeo = function aritGeo(chkArray) {
         return -1; //returns -1 if sequence is neither arithmetic nor geometric
     }
 };
-aritGeo([1, 2, 3, 4]);
+
 exports.default = aritGeo;
