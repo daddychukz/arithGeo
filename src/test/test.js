@@ -56,5 +56,9 @@ describe("Arith-Geo", function(){
         });
     })
 
-
+    describe("handle invalid input", function(){
+        it("should return -1 as aritGeo for [2,3,5,8,10] input ", function(){
+            assert.equal(aritGeo([2,3,5,8,10]), -1);
+        });
+    })
 })
