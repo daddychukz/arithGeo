@@ -4,7 +4,8 @@
   "description": " A function that checks if an Array argument is Arithmetic, Geometric, neither Arithmetic nor Geometric, or if the array is Empty ",
   "main": "src/app.js",
   "scripts": {
-    "test": "src/tests/test.js"
+    "test": "mocha ./dist/tests/test.js",
+    "build": "babel ./src --watch -d ./dist"
   },
   "repository": {
     "type": "git",
