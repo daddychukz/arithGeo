@@ -38,5 +38,11 @@ describe("Arith-Geo", function(){
         });
     })
 
-    
+    describe("handle invalid input", function(){
+        it("should return 0 as aritGeo for []", function(){
+            assert.equal(aritGeo([]), 0);
+        });
+    })
+
+
 })
