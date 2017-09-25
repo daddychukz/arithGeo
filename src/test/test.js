@@ -26,5 +26,17 @@ describe("Arith-Geo", function(){
         });
     })
 
+    describe("handle valid input", function(){
+        it("should return geometric as aritGeo for [1/2, 1/4, 1/8, 1/16]", function(){
+            assert.equal(aritGeo([1/2, 1/4, 1/8, 1/16]), "Geometric");
+        });
+    })
+
+    describe("handle valid input", function(){
+        it("should return geometric as aritGeo for [10, 30, 90, 270, 810]", function(){
+            assert.equal(aritGeo([10, 30, 90, 270, 810]), "Geometric");
+        });
+    })
+
     
 })
